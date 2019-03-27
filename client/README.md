@@ -1,3 +1,1 @@
-# Apollo Fullstack Tutorial
-
-## Client
+# Client
