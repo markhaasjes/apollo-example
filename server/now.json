@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "apollo-example-server",
+  "builds": [{ "src": "./src/index.js", "use": "@now/node-server" }],
+  "routes": [{ "src": "/", "dest": "src/index.js" }]
+}
