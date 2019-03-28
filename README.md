@@ -1,6 +1,6 @@
 # Apollo example
 
-This is the fullstack app for the [Apollo tutorial](http://apollographql.com/docs/tutorial/introduction.html). 🚀
+This is an example project to test Apollo with GraphQL, SQLite, Localstorage and a connection to the [SpaceX-API|https://github.com/r-spacex/SpaceX-API]. This project was created based on the [Apollo tutorial|https://www.apollographql.com/docs/tutorial/introduction].
 
 ## File structure
 

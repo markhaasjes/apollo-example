@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
 import { Header, Loading } from '../components';
 import { CartItem, BookTrips } from '../containers';
-import { QueryManager } from 'apollo-client/core/QueryManager';
 
 export const GET_CART_ITEMS = gql`
   query GetCartItems {

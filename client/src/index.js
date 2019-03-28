@@ -7,6 +7,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 import gql from 'graphql-tag';
 
+import { resolvers, typeDefs } from './resolvers';
 import Pages from './pages';
 import Login from './pages/login';
 
@@ -21,7 +22,9 @@ const client = new ApolloClient({
     headers: {
       authorization: localStorage.getItem('token')
     }
-  })
+  }),
+  resolvers,
+  typeDefs
 });
 
 cache.writeData({
