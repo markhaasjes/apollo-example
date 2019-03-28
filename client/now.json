@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "apollo-example-client",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/static/$1"
+    },
+    { "src": "^/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "^/site.manifest", "dest": "/site.manifest" },
+    {
+      "src": "^/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/index.html"
+    }
+  ]
+}
